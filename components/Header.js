@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 // components
+import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
@@ -63,13 +64,16 @@ const useStyles = makeStyles(() => ({
 }));
 
 const Header = () => {
-  const [anchorEl, setAnchorEl] = useState(null)
+  const [open, setOpen] = useState(false)
   const classes = useStyles()
-  const handleClick = event => {
-    setAnchorEl(event.currentTarget);
+  const handleOpen = () => {
+    setOpen(open => !open);
   }
   const handleClose = () => {
-    setAnchorEl(null);
+    setOpen(false);
+  }
+  const handleScroll = (to) => {
+    document.querySelector(`#${to}`).scrollIntoView({behavior: 'smooth'})
   }
   return (<div>
     <AppBar
@@ -82,58 +86,63 @@ const Header = () => {
             <IconButton
               style={{ marginLeft: 'auto' }}
               color="inherit"
-              aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}
+              aria-controls="menu" aria-haspopup="true" onClick={handleOpen}
             >
               <MdMenu />
             </IconButton>
             <Menu
-              id="simple-menu"
-              anchorEl={anchorEl}
+              id="menu"
               keepMounted
-              open={Boolean(anchorEl)}
+              open={open}
               onClose={handleClose}
             >
-              <Link href={`/#locucion`} passHref>
-                <MenuItem onClick={handleClose}>Locución</MenuItem>
-              </Link>
-              <Link href={`/#doblaje`} passHref>
-                <MenuItem onClick={handleClose}>Doblaje</MenuItem>
-              </Link>
-              <Link href={`/#docencia`} passHref>
-                <MenuItem onClick={handleClose}>Docencia</MenuItem>
-              </Link>
-              <Link href={`/#contacto`} passHref>
-                <MenuItem onClick={handleClose}>contacto</MenuItem>
-              </Link>
+                <MenuItem onClick={() => {
+                  handleScroll('locucion')
+                  handleClose()
+                }}>Locución</MenuItem>
+                <MenuItem onClick={() => {
+                  handleScroll('doblaje')
+                  handleClose()
+                }}>Doblaje</MenuItem>
+                <MenuItem onClick={() => {
+                  handleScroll('docencia')
+                  handleClose()
+                }}>Docencia</MenuItem>
+                <MenuItem onClick={() => {
+                  handleScroll('contacto')
+                  handleClose()
+                }}>contacto</MenuItem>
             </Menu>
           </Hidden>
         </div>
         <div>
           <div className={classes.navBrand}>
             <Link className={classes.navBrand} href={`/`} passHref>
-              <Image
-                src={logo}
-                width={100}
-                height={50}
-                alt="Santiago Maurig"
-                className={classes.svgLogo}
-              />
+              <a>
+                <Image
+                  src={logo}
+                  width={100}
+                  height={50}
+                  alt="Santiago Maurig"
+                  className={classes.svgLogo}
+                  />
+                </a>
             </Link>
           </div>
         </div>
         <div className={classes.nav}>
           <Hidden smDown>
             <Typography className={classes.navBar} style={{ marginLeft: 'auto', marginRight: '10px' }}>
-              <Link activeClassName='active' href={`/#locucion`}><a className={classes.navLink}>Locución</a></Link>
+              <Button onClick={() => handleScroll('locucion')} className={classes.navLink}>Locución</Button>
             </Typography>
             <Typography className={classes.navBar} style={{ marginRight: '10px' }}>
-              <Link partiallyActive={true} activeClassName='active' href={`/#doblaje`}><a className={classes.navLink}>Doblaje</a></Link>
+              <Button onClick={() => handleScroll('doblaje')} className={classes.navLink}>Doblaje</Button>
             </Typography>
             <Typography className={classes.navBar} style={{ marginRight: '10px' }}>
-              <Link activeClassName='active' href={`/#docencia`}><a className={classes.navLink}>Docencia</a></Link>
+              <Button onClick={() => handleScroll('docencia')} className={classes.navLink}>Docencia</Button>
             </Typography>
             <Typography className={classes.navBar}>
-              <Link activeClassName='active' href={`/#contacto`}><a className={classes.navLink}>Contacto</a></Link>
+              <Button onClick={() => handleScroll('contacto')} className={classes.navLink}>Contacto</Button>
             </Typography>
           </Hidden>
         </div>

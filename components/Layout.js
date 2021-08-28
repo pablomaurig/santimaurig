@@ -10,7 +10,7 @@ const Layout = ({ children, title, description, favicon }) => {
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-        <link rel="icon" href={favicon} />
+        <link rel="icon" href={favicon} type="image/png" />
       </Head>
       <div style={{ minHeight: '100vh', backgroundColor: '#FFF' }}>
         <Header />

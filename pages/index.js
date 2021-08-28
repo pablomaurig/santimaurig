@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { data } from '../data'
 import { Grid, Container, Box, Typography, Dialog, DialogContent, Button } from '@material-ui/core'
 import Hero from '../components/Hero'
@@ -32,7 +31,7 @@ export default function Home({ data }) {
     setOpen(false);
   }
   return (
-    <Layout title={data.siteTitle} description={data.siteDescription} favicon="/favicon.ico">
+    <Layout title={data.siteTitle} description={data.siteDescription} favicon="/images/favicon.png">
       <div className={classes.container}>
         <Hero background="back-hero.png" data={data} />
         <Box component="section" pt={2} pb={10}>
@@ -103,12 +102,7 @@ export default function Home({ data }) {
             </Grid>
             <Grid container spacing={0} style={{ marginTop: '2rem' }} justifyContent="center">
               <Grid item>
-                <Link
-                  href="/#contacto"
-                  passHref
-                >
-                  <SquareButton label={data.locucionButton} />
-                </Link>
+                <SquareButton to="contacto" label={data.locucionButton} />
               </Grid>
             </Grid>
           </Container>
@@ -161,12 +155,7 @@ export default function Home({ data }) {
             )}
             <Grid container spacing={0} style={{ marginTop: '2rem' }} justifyContent="center">
               <Grid item>
-                <Link
-                  href="/#contacto"
-                  passHref
-                >
-                  <SquareButton label={data.teamWork} />
-                </Link>
+                <SquareButton label={data.teamWork} to="contacto" />
               </Grid>
             </Grid>
           </Container>
@@ -176,8 +165,6 @@ export default function Home({ data }) {
             <Grid container spacing={3} justifyContent="center">
               <Grid item xs={12}>
                 <div className='workLove' style={{ textAlign: 'center' }} dangerouslySetInnerHTML={{ __html: data.workLove }}></div>
-                {/* <Typography className='workLove' align="center" gutterBottom component="p"
-                  dangerouslySetInnerHTML={{ __html: data.workLove }}></Typography> */}
               </Grid>
               {data.brandsBottom.map((brand, i) =>
                 <Grid key={i} item xs={4} sm={2} md={2}>
@@ -238,12 +225,7 @@ export default function Home({ data }) {
             </Grid>
             <Grid container spacing={0} style={{ marginTop: '2rem' }} justifyContent="center">
               <Grid item>
-                <Link
-                  href="/#contacto"
-                  passHref
-                >
-                  <SquareButton label={data.doblajeButton} />
-                </Link>
+                  <SquareButton label={data.doblajeButton} to="contacto" />
               </Grid>
             </Grid>
           </Container>
@@ -287,12 +269,7 @@ export default function Home({ data }) {
               </Grid>
               <Grid container spacing={0} style={{ marginTop: '2rem' }} justifyContent="center">
                 <Grid item>
-                  <Link
-                    href="/#contacto"
-                    passHref
-                  >
-                    <SquareButton label={data.teachingButton} />
-                  </Link>
+                  <SquareButton label={data.teachingButton} to="contacto" />
                 </Grid>
               </Grid>
             </Grid>
