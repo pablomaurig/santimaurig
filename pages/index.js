@@ -179,7 +179,7 @@ export default function Home({ data }) {
             </Grid>
           </Container>
         </Box>
-        <BackgroundBox className={classes.boxDocencia} image="docencia.png" id="doblaje" component="section" py={10}>
+        <BackgroundBox className={classes.boxDoblaje} image="doblaje.png" id="doblaje" component="section" py={10}>
           <Container>
             <Grid container spacing={3} justifyContent="center">
               <Grid item xs={12} sm={4} lg={3} className='doblaje-item'>
@@ -318,6 +318,7 @@ export default function Home({ data }) {
         open={open}
         onClose={handleClose}
         aria-describedby="alert-dialog-description"
+        disableScrollLock={true}
       >
         <DialogContent className={classes.dialog} id="alert-dialog-description">
           <iframe title="modal" width="560" height="315" src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

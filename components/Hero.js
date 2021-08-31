@@ -10,26 +10,26 @@ const useStyles = makeStyles(() => ({
     border: '4rem solid #fff',
     boxSizing: 'border-box',
     backgroundBlendMode: 'screen',
-    '& @media screen and (max-width: 500px)': {
+    ['@media screen and (max-width: 500px)']: {
       backgroundPosition: 'center',
       border: '2rem solid #fff',
     },
     '& .MuiTypography-h2': {
       fontSize: '3.75rem',
-      '& @media screen and (max-width: 800px)': {
+      ['@media screen and (max-width: 800px)']: {
         fontSize: '2.2rem',
       },
-      '& @media screen and (max-width: 500px)': {
+      ['@media screen and (max-width: 500px)']: {
         fontSize: '1.8rem',
       },
     },
     '& .MuiTypography-h4': {
       fontSize: '2.34rem',
       fontFamily: '"Roboto Condensed", sans-serif',
-      '& @media screen and (max-width: 800px)': {
+      ['@media screen and (max-width: 800px)']: {
         fontSize: '1.37em',
       },
-      '& @media screen and (max-width: 500px)': {
+      ['@media screen and (max-width: 500px)']: {
         fontSize: '1rem',
       }
     },

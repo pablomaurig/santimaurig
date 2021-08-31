@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles'
 
 export const useStyles = makeStyles(() => ({
   boxLocucion: {
-    backgroundColor: '#E4EAE6',
+    backgroundColor: '#eaf3ed',
     backgroundSize: 'cover',
     backgroundBlendMode: 'screen',
     backgroundPosition: 'center',
@@ -12,22 +12,22 @@ export const useStyles = makeStyles(() => ({
     backgroundPositionX: 'center',
   },
   boxDoblaje: {
-    backgroundColor: '#b5c0b9',
+    backgroundColor: '#ffffff',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundBlendMode: 'screen',
   },
   boxDocencia: {
     backgroundSize: 'cover',
-    backgroundColor: '#FFE3E5',
+    backgroundColor: '#f4f0df',
     backgroundPositionX: 'center',
   },
   boxContacto: {
     backgroundSize: 'cover',
-    backgroundColor: '#FFE3E5',
+    backgroundColor: '#ffffff',
     backgroundPositionX: 'right',
     backgroundPositionY: 'bottom',
-    '& @media screen and(min - width: 768px)': {
+    ['@media screen and (min-width: 768px)']: {
       '& .MuiTypography - h5': {
         fontSize: '2.125rem'
       },
@@ -75,7 +75,7 @@ export const useStyles = makeStyles(() => ({
         marginBottom: '0.2rem',
       }
     },
-    '& @media screen and (max-width: 500px)': {
+    ['@media screen and (max-width: 500px)']: {
       '& .enjoy': {
         fontSize: '1.5em',
       },
@@ -83,17 +83,17 @@ export const useStyles = makeStyles(() => ({
         fontSize: '1.1em',
       }
     },
-    '& @media screen and (min-width: 768px)': {
+    ['@media screen and (min-width: 768px)']: {
       '& .box-programa': {
         paddingTop: '1.5em!important',
       }
     },
-    '& @media screen and (min-width: 980px)': {
+    ['@media screen and (min-width: 980px)']: {
       '& .workTitle': {
         fontSize: '2.9rem',
       }
     },
-    '& @media screen and (min-width: 600px)': {
+    ['@media screen and (min-width: 600px)']: {
       '& .doblaje-item': {
         order: 2,
         '& *': {
@@ -125,7 +125,7 @@ export const useStyles = makeStyles(() => ({
     },
     '& .svg-logo': {
       width: '160px',
-      '& @media screen and (min-width: 540px)': {
+      ['@media screen and (min-width: 540px)']: {
         width: '220px',
       },
       height: 'auto',
@@ -177,15 +177,15 @@ export const useStyles = makeStyles(() => ({
       marginBottom: '-7px',
       width: '280px',
       height: '157px',
-      '& @media screen and (min-width: 374px)': {
+      ['@media screen and (min-width: 374px)']: {
         width: '320px',
         height: '168px',
       },
-      '& @media screen and (min-width: 540px)': {
+      ['@media screen and (min-width: 540px)']: {
         width: '450px',
         height: '253px',
       },
-      '& @media screen and (min-width: 768px)': {
+      ['@media screen and (min-width: 768px)']: {
         width: '599px',
         height: '337px',
       },

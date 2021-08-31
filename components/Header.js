@@ -20,7 +20,7 @@ const useStyles = makeStyles(() => ({
     backgroundColor: 'white',
     display: 'grid',
     gridTemplateColumns: '1fr 1fr 1fr',
-    '& @media screen and (min-width: 768px)': {
+    ['@media screen and (min-width: 768px)']: {
       gridTemplateColumns: '1fr 1fr 1fr',
     },
     '& > div:nth-child(1)': {
@@ -47,10 +47,19 @@ const useStyles = makeStyles(() => ({
       color: 'red',
     }
   },
+  list: {
+    padding: '0',
+    display: 'flex',
+    minWidth: '130px',
+  },
+  block: {
+    background: 'none',
+    width: '100%',
+  },
   svgLogo: {
     width: '100px',
     height: '50px',
-    '& @media screen and (min-width: 768px)': {
+    ['@media screen and (min-width: 768px)']: {
       width: '80px',
       height: '40px',
     },
@@ -64,13 +73,13 @@ const useStyles = makeStyles(() => ({
 }));
 
 const Header = () => {
-  const [open, setOpen] = useState(false)
+  const [anchorEl, setAnchorEl] = useState(null);
   const classes = useStyles()
-  const handleOpen = () => {
-    setOpen(open => !open);
-  }
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
   const handleClose = () => {
-    setOpen(false);
+    setAnchorEl(null);
   }
   const handleScroll = (to) => {
     document.querySelector(`#${to}`).scrollIntoView({behavior: 'smooth'})
@@ -86,32 +95,30 @@ const Header = () => {
             <IconButton
               style={{ marginLeft: 'auto' }}
               color="inherit"
-              aria-controls="menu" aria-haspopup="true" onClick={handleOpen}
+              aria-controls="menu" aria-haspopup="true" onClick={handleClick}
             >
               <MdMenu />
             </IconButton>
             <Menu
               id="menu"
               keepMounted
-              open={open}
+              open={Boolean(anchorEl)}
+              anchorEl={anchorEl}
+              disableScrollLock={true}
               onClose={handleClose}
             >
-                <MenuItem onClick={() => {
-                  handleScroll('locucion')
-                  handleClose()
-                }}>Locución</MenuItem>
-                <MenuItem onClick={() => {
-                  handleScroll('doblaje')
-                  handleClose()
-                }}>Doblaje</MenuItem>
-                <MenuItem onClick={() => {
-                  handleScroll('docencia')
-                  handleClose()
-                }}>Docencia</MenuItem>
-                <MenuItem onClick={() => {
-                  handleScroll('contacto')
-                  handleClose()
-                }}>contacto</MenuItem>
+              <MenuItem className={classes.list} disableRipple>
+                <Button className={classes.block} onClick={() => handleScroll('locucion')}>Locución</Button>
+              </MenuItem>
+              <MenuItem className={classes.list} disableRipple>
+                <Button className={classes.block} onClick={() => handleScroll('doblaje')}>Doblaje</Button>
+              </MenuItem>
+              <MenuItem className={classes.list} disableRipple>
+                <Button className={classes.block} onClick={() => handleScroll('docencia')}>Docencia</Button>
+              </MenuItem>
+              <MenuItem className={classes.list} disableRipple>
+                <Button className={classes.block} onClick={() => handleScroll('contacto')}>contacto</Button>
+              </MenuItem>
             </Menu>
           </Hidden>
         </div>
