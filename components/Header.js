@@ -88,6 +88,7 @@ const Header = () => {
     <AppBar
       elevation={0}
       className='header'
+      id='header'
     >
       <Toolbar className={classes.header}>
         <div>

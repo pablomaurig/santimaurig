@@ -1,20 +1,28 @@
-import { Grid, Container, Box } from '@material-ui/core'
 import Image from 'next/image'
+import { Grid, Container, Box, Typography } from '@material-ui/core'
 
-const SectionAbout = ({ texto, imagen }) => {
+const SectionAbout = ({ titulo, texto, imagen }) => {
   return (
-    <Box component="section" py={5}>
+    <Box component="section" py={10}>
       <Container>
-        <Grid container spacing={3} justifyContent="center">
-          <Grid item xs={12} sm={6}>
-            {texto}
+        <Grid container spacing={3} justify="space-between">
+          <Grid className='order' item xs={12} sm={6} md={4}>
+            <Typography className='titleYear' align="left" gutterBottom variant="p" component="h2">
+              {titulo}
+            </Typography>
+            <Typography align="justify" gutterBottom component="p">
+              {texto}
+            </Typography>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} md={7}>
             <Image
               src={imagen}
-              width={500}
-              height={300}
+              width={708}
+              height={470}
               alt={texto}
+              objectFit="cover"
+              objectPosition="50% 50%"
+              fadeIn="true"
             />
           </Grid>
         </Grid>
@@ -23,3 +31,4 @@ const SectionAbout = ({ texto, imagen }) => {
   )
 }
 export default SectionAbout
+            

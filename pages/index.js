@@ -33,7 +33,7 @@ export default function Home({ data }) {
   return (
     <Layout title={data.siteTitle} description={data.siteDescription} favicon="/images/favicon.png">
       <div className={classes.container}>
-        <Hero background="back-hero.png" data={data} />
+        <Hero background="back-hero.webp" data={data} />
         <Box component="section" pt={2} pb={10}>
           <Container style={{ maxWidth: '930px' }}>
             <Grid container spacing={3} justifyContent="center">
@@ -45,20 +45,21 @@ export default function Home({ data }) {
                 <Grid key={i} item xs={4} sm={2} md={2}>
                   <Image
                     src={`/images/brands/${brand.image}`}
-                    width={500}
-                    height={300}
+                    width={129}
+                    height={77}
                     alt={brand.alt}
+                    className='img-responsive'
                   />
                 </Grid>
               )}
             </Grid>
           </Container>
         </Box>
-        <BackgroundBox className={classes.boxLocucion} image="locucion.png" id='locucion' component="section" py={10}>
+        <BackgroundBox className={classes.boxLocucion} image="locucion.webp" id='locucion' component="section" py={10}>
           <Container>
             <Grid container spacing={3} justifyContent="center">
               <Grid item xs={12} sm={4} lg={3}>
-                <Typography className='workTitle' align="left" gutterBottom variant="h4" component="h2">
+                <Typography className='workTitle' align="left" gutterBottom variant="h4" component="h3">
                   {data.locucionTitle}
                 </Typography>
                 {data.locucionReeles.map((lreel, key) =>
@@ -89,8 +90,8 @@ export default function Home({ data }) {
                       }} role="button" tabIndex="0" style={{ cursor: 'pointer' }}>
                         <Image
                           src={`/images/locucion/${work.thumnail}`}
-                          width={500}
-                          height={300}
+                          width={198}
+                          height={111}
                           alt={work.name}
                           className='img-responsive'
                         />
@@ -121,7 +122,7 @@ export default function Home({ data }) {
             </Grid>
           </Container>
         </Box>
-        <BackgroundBox className={classes.boxProgramas} image="programas.png" component="section" pt={15} pb={10}>
+        <BackgroundBox className={classes.boxProgramas} image="programas.webp" component="section" pt={15} pb={10}>
           <Container>
             {data.featuredWork.map((work, key) =>
               <Grid key={key} container spacing={3} justifyContent="center" style={{ marginBottom: '1em', maxWidth: '1000px' }}>
@@ -142,7 +143,7 @@ export default function Home({ data }) {
                   </div>
                 </Grid>
                 <Grid item xs={12} sm={8} className='box-programa'>
-                  <Typography align="left" style={{ fontWeight: 'bold' }} gutterBottom variant="h5" component="h2">
+                  <Typography align="left" style={{ fontWeight: 'bold' }} gutterBottom variant="h5" component="h3">
                     {work.title}
                   </Typography>
                   <Typography align="left" gutterBottom component="p">
@@ -170,20 +171,21 @@ export default function Home({ data }) {
                 <Grid key={i} item xs={4} sm={2} md={2}>
                   <Image
                     src={`/images/brands/${brand.image}`}
-                    width={500}
-                    height={300}
+                    width={129}
+                    height={77}
                     alt={brand.alt}
+                    className='img-responsive'
                   />
                 </Grid>
               )}
             </Grid>
           </Container>
         </Box>
-        <BackgroundBox className={classes.boxDoblaje} image="doblaje.png" id="doblaje" component="section" py={10}>
+        <BackgroundBox className={classes.boxDoblaje} image="doblaje.webp" id="doblaje" component="section" py={10}>
           <Container>
             <Grid container spacing={3} justifyContent="center">
               <Grid item xs={12} sm={4} lg={3} className='doblaje-item'>
-                <Typography className='workTitle' align="left" gutterBottom variant="h4" component="h2">
+                <Typography className='workTitle' align="left" gutterBottom variant="h4" component="h3">
                   {data.doblajeTitle}
                 </Typography>
                 {data.doblajeReeles.map((dreel, key) =>
@@ -213,9 +215,10 @@ export default function Home({ data }) {
                       }} role="button" tabIndex="0">
                         <Image
                           src={`/images/doblaje/${work.thumnail}`}
-                          width={500}
-                          height={300}
+                          width={198}
+                          height={111}
                           alt={work.name}
+                          className='img-responsive'
                         />
                       </div>
                     </Grid>
@@ -244,7 +247,7 @@ export default function Home({ data }) {
             </Grid>
           </Container>
         </Box>
-        <BackgroundBox className={classes.boxDocencia} image="docencia.png" id='docencia' component="section" py={12}>
+        <BackgroundBox className={classes.boxDocencia} image="docencia.webp" id='docencia' component="section" py={12}>
           <Container style={{ maxWidth: '800px' }}>
             <Grid container spacing={3} justifyContent="center">
               <Grid item xs={12} sm={8}>
@@ -256,7 +259,7 @@ export default function Home({ data }) {
               </Grid>
               <Grid container spacing={3} justifyContent="center" align="center">
                 <Grid item xs={12} >
-                  <Typography className="experience" align="center" variant="h5" component="h2" style={{ marginTop: '1em' }}>
+                  <Typography className="experience" align="center" variant="h5" component="h3" style={{ marginTop: '1em' }}>
                     EXPERIENCIA LABORAL
                   </Typography>
                 </Grid>
@@ -276,15 +279,15 @@ export default function Home({ data }) {
           </Container>
         </BackgroundBox>
         <SectionAbout className={classes.box1985} titulo={data.aboutTitle} texto={data.about} imagen={`/images/${data.aboutImage}`} />
-        <BackgroundBox className={classes.boxContacto} image="contacto.png" id="contacto" component="section" py={10}>
+        <BackgroundBox className={classes.boxContacto} image="contacto.webp" id="contacto" component="section" py={10}>
           <Container>
             <Grid container spacing={3} justifyContent="flex-start">
               <Grid item xs={12} className="object">
-                <Typography align="left" gutterBottom variant="h5" component="h2" style={{ marginBottom: "2rem" }}
+                <Typography align="left" gutterBottom variant="h5" component="h4" style={{ marginBottom: "2rem" }}
                   dangerouslySetInnerHTML={{ __html: data.contactTitle }}></Typography>
                 <Typography className="span" align="left" gutterBottom component="p" style={{ marginBottom: "2rem" }}
                   dangerouslySetInnerHTML={{ __html: data.contactObjective }}></Typography>
-                <Typography align="right" gutterBottom variant="h5" component="h2"
+                <Typography align="right" gutterBottom variant="h5" component="h4"
                   dangerouslySetInnerHTML={{ __html: data.contact }}></Typography>
               </Grid>
             </Grid>
@@ -304,8 +307,8 @@ export default function Home({ data }) {
               <Grid item xs={12} sm={6} align="right">
                 <Image
                   src={logo}
-                  width={500}
-                  height={300}
+                  width={215}
+                  height={108}
                   alt="Santiago Maurig"
                   className="svg-logo"
                 />

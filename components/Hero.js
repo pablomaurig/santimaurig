@@ -54,7 +54,7 @@ const Hero = (props) => {
         <Grid container alignItems="center" style={{ height: '100%' }}>
           <Grid item xs={12} style={{ border: "10px solid", padding: "10px", backgroundColor: "rgba(255,255,255,0.4)" }}>
             <Typography align="center" variant="h2" style={{ color: "#000" }}>{data.heroTop}</Typography>
-            <Typography align="center" variant="h4" style={{ color: "#000" }}>{data.heroBottom}</Typography>
+            <Typography align="center" variant="h4" component="h2" style={{ color: "#000" }}>{data.heroBottom}</Typography>
           </Grid>
         </Grid>
       </Container>

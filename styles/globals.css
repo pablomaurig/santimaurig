@@ -633,3 +633,28 @@ pre tt:after {
 .MuiIconButton-label svg {
   fill: black;
 }
+
+@media screen and (min-width: 600px) {
+  .order {
+    order: 2;
+  }
+}
+
+.titleYear {
+  position: relative;
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+.titleYear:before {
+  content: "1985";
+  position: absolute;
+  right: 0;
+  top: -0.6em;
+  color: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 6rem;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
