@@ -12,7 +12,7 @@ export const useStyles = makeStyles(() => ({
     backgroundPositionX: 'center',
   },
   boxDoblaje: {
-    backgroundColor: '#ffffff',
+    backgroundColor: '#b5c0b9',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundBlendMode: 'screen',
