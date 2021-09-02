@@ -245,7 +245,7 @@ export const data = {
     {
       id: '8CyG-pGQBGA',
       title: 'VORTERIX RADIO',
-      small: '(Argentina)',
+      small: 'Argentina',
       image: 'locuciones_artisticas_vorterix.png',
       rol: 'Promocionales y comerciales.',
       staff: 'Director: Mario Pergolini',
@@ -253,7 +253,7 @@ export const data = {
     {
       id: 'dZ12XtTmB2s',
       title: 'LOVE NATURE',
-      small: '(TV Prepaga, Latam)',
+      small: 'TV Prepaga, Latam',
       image: 'combate.png',
       rol: '“El Jefe” (9ª Generación)',
       staff: 'Conductores: Laura Fernández, “El Pollo” Álvarez y Tito Esperanza. <br>Productor Ejecutivo: Daniel Borro.',
@@ -261,7 +261,7 @@ export const data = {
     {
       id: 'zEpEtdW36R4',
       title: 'COMBATE ',
-      small: '(Canal 9, Argentina)',
+      small: 'Canal 9, Argentina',
       image: 'combate.png',
       rol: '“El Jefe” (9ª Generación)',
       staff: 'Conductores: Laura Fernández, “El Pollo” Álvarez y Tito Esperanza. <br>Productor Ejecutivo: Daniel Borro.',
