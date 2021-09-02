@@ -7,7 +7,7 @@ const SectionAbout = ({ titulo, texto, imagen }) => {
       <Container>
         <Grid container spacing={3} justify="space-between">
           <Grid className='order' item xs={12} sm={6} md={4}>
-            <Typography className='titleYear' align="left" gutterBottom variant="p" component="h2">
+            <Typography className='titleYear' align="left" gutterBottom variant="h6" component="h2">
               {titulo}
             </Typography>
             <Typography align="justify" gutterBottom component="p">

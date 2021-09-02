@@ -658,3 +658,7 @@ pre tt:after {
   font-size: 6rem;
   font-family: "Oswald", Arial, Helvetica, sans-serif;
 }
+
+.programas:nth-child(2n) {
+  flex-basis: 100%;
+}

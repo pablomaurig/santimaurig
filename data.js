@@ -9,79 +9,79 @@ export const data = {
   brandsTop: [
     {
       image: 'pfizer.png',
-      alt: 'pfizer'
+      alt: ''
     }, {
       image: 'nokia.png',
-      alt: 'nokia'
+      alt: ''
     }, {
       image: 'paypal.png',
-      alt: 'paypal'
+      alt: ''
     }, {
       image: 'assist-card.png',
-      alt: 'assist-card'
+      alt: ''
     }, {
       image: 'google.png',
-      alt: 'google'
+      alt: ''
     }, {
       image: 'tic-tac.png',
-      alt: 'tic-tac'
+      alt: ''
     }, {
       image: 'uaz-hunter.png',
-      alt: 'uaz-hunter'
+      alt: ''
     }, {
-      image: 'hoyts.png',
-      alt: 'hoyts'
+      image: 'bimbo.png',
+      alt: ''
     }, {
       image: 'puma.png',
-      alt: 'puma'
+      alt: ''
     }, {
       image: 'oster.png',
-      alt: 'oster'
+      alt: ''
     }, {
       image: 'atm.png',
-      alt: 'atm'
+      alt: ''
     }, {
-      image: 'makro.png',
-      alt: 'makro'
+      image: 'quilmes.png',
+      alt: ''
     },
   ],
   brandsBottom: [
     {
       image: 'warner.png',
-      alt: 'warner'
+      alt: ''
     }, {
       image: 'discovery.png',
-      alt: 'discovery'
+      alt: ''
     }, {
       image: 'cartoon.png',
-      alt: 'cartoon'
+      alt: ''
     }, {
       image: 'natgeo.png',
-      alt: 'natgeo'
+      alt: ''
     }, {
       image: 'sony.png',
-      alt: 'sony'
+      alt: ''
     }, {
       image: 'hbo.png',
-      alt: 'hbo'
+      alt: ''
     }, {
       image: 'disney.png',
-      alt: 'disney'
+      alt: ''
     }, {
       image: 'nickelodeon.png',
-      alt: 'nickelodeon'
+      alt: ''
     }, {
       image: 'netflix.png',
-      alt: 'netflix'
+      alt: ''
     }, {
       image: 'tnt.png',
-      alt: 'tnt'
+      alt: ''
     }, {
       image: 'fox.png',
-      alt: 'fox'
+      alt: ''
     }, {
       image: 'mtv.png',
-      alt: 'mtv'
+      alt: ''
     },
   ],
   clave: 'LA CLAVE DEL ÉXITO ES LA CONFIANZA',
@@ -89,32 +89,32 @@ export const data = {
   locucionButton: 'EL MOMENTO ES AHORA',
   locucionReeles: [
     {
-      id: 'iPFBDzPFp_Q',
-      name: 'REEL COMERCIAL 2020 - ARGENTINA',
+      id: 'x4p4BXz7tPA',
+      name: 'REEL COMERCIAL - ARGENTINA',
       video: '',
     },
     {
       id: 'cBHeLh3DBZk',
-      name: 'REEL ACTING  2020 - ARGENTINA',
+      name: 'REEL ACTING - ARGENTINA',
       video: '',
     },
     {
-      id: 'qq6KQzRZ5h0',
-      name: 'REEL COMERCIAL 2020 - LATAM',
+      id: 'xl5v3Cwh7hY',
+      name: 'REEL COMERCIAL - LATAM',
       video: '',
     }
   ],
   locucionWork: [
     {
-      id: 'vljh_aN20hc',
-      name: 'Locución Comercial - Gordon´s Gin',
-      thumnail: 'gondons_gin.png',
+      id: 'YZa36-vrilo',
+      name: 'Bimbo Artesano',
+      thumnail: 'bimbo_artesano.png',
       video: '',
     },
     {
-      id: 'SR3DAHqU4Ks',
-      name: 'HIPERMAYORISTA MAKRO',
-      thumnail: 'makro.png',
+      id: 'vljh_aN20hc',
+      name: 'Locución Comercial - Gordon´s Gin',
+      thumnail: 'gondons_gin.png',
       video: '',
     },
     {
@@ -124,33 +124,39 @@ export const data = {
       video: '',
     },
     {
-      id: 'z3zFNFdbacY',
-      name: 'PODCAST VORTERIX',
-      thumnail: 'vorterix_playa.png',
+      id: 'r9GSO8qHdG8',
+      name: 'Locución - Phillips',
+      thumnail: 'phillips_hue.png',
       video: '',
     },
     {
-      id: 'pmaY83pfUA0',
-      name: 'PAGINAS AMARILLAS',
-      thumnail: 'acting_paginas_amarillas.png',
+      id: 'yijj5WAuKAs',
+      name: 'NOT CO',
+      thumnail: 'not_co.png',
       video: '',
     },
     {
-      id: 'dEbsi3Vb2_U',
-      name: 'PUBLICIDAD DE RADIO - ZOETIS',
-      thumnail: 'zoetis.png',
+      id: '1tCgIOXEW84',
+      name: 'CAFETERAS OSTER ARGENTINA',
+      thumnail: 'cafeteras_oster.png',
       video: '',
     },
     {
-      id: '_M47-FPRoYw',
-      name: 'ACTING DE RADIO PARA MUSIMUNDO',
-      thumnail: 'musimundo.png',
+      id: 'rnD88EjoM74',
+      name: 'Taste Made',
+      thumnail: 'tastemade_plutotv.png',
       video: '',
     },
     {
-      id: 'f6MxXgsY5dM',
-      name: 'ELECCIONES BOCA',
-      thumnail: 'boca.png',
+      id: '-IC3X2PYLqk',
+      name: 'FMS - YPF',
+      thumnail: 'ypf_fms.png',
+      video: '',
+    },
+    {
+      id: 'xQ7c_MyGC-E',
+      name: 'Campaña de Vacunación',
+      thumnail: 'campa_vacunacion.png',
       video: '',
     },
     {
@@ -160,9 +166,15 @@ export const data = {
       video: '',
     },
     {
-      id: '1tCgIOXEW84',
-      name: 'CAFETERAS OSTER ARGENTINA',
-      thumnail: 'cafeteras_oster.png',
+      id: 'rkrsVlxkV64',
+      name: 'Vacunación EEUU - Voice Acting',
+      thumnail: 'vacu_eeuu_acting.png',
+      video: '',
+    },
+    {
+      id: 'bKt7ZUIlZ3A',
+      name: 'Rapiditas Bimbo',
+      thumnail: 'rapiditas.png',
       video: '',
     },
     {
@@ -228,20 +240,31 @@ export const data = {
   ],
   enjoy: 'LLEVO MÁS DE 12 AÑOS TRABAJANDO DE MANERA ININTERRUMPIDA COMO LOCUTOR PARA ARGENTINA Y TODA LATINOAMÉRICA',
   love: 'DISFRUTO HACIENDO LO QUE AMO Y AMO QUE DISFRUTEN LO QUE HAGO',
+  featuredWorkTitle: 'VOZ ARTÍSTICA',
   featuredWork: [
     {
-      id: 'zEpEtdW36R4',
-      title: 'VOZ EN OFF COMBATE (Canal 9)',
+      id: '8CyG-pGQBGA',
+      title: 'VORTERIX RADIO',
+      small: '(Argentina)',
+      image: 'locuciones_artisticas_vorterix.png',
+      rol: 'Promocionales y comerciales.',
+      staff: 'Director: Mario Pergolini',
+    },
+    {
+      id: 'dZ12XtTmB2s',
+      title: 'LOVE NATURE',
+      small: '(TV Prepaga, Latam)',
       image: 'combate.png',
       rol: '“El Jefe” (9ª Generación)',
       staff: 'Conductores: Laura Fernández, “El Pollo” Álvarez y Tito Esperanza. <br>Productor Ejecutivo: Daniel Borro.',
     },
     {
-      id: '8CyG-pGQBGA',
-      title: 'VOZ ARTÍSTICA (Vorterix)',
-      image: 'locuciones_artisticas_vorterix.png',
-      rol: 'Promocionales y comerciales.',
-      staff: 'Director: Mario Pergolini',
+      id: 'zEpEtdW36R4',
+      title: 'COMBATE ',
+      small: '(Canal 9, Argentina)',
+      image: 'combate.png',
+      rol: '“El Jefe” (9ª Generación)',
+      staff: 'Conductores: Laura Fernández, “El Pollo” Álvarez y Tito Esperanza. <br>Productor Ejecutivo: Daniel Borro.',
     },
   ],
   teamWork: 'ARMEMOS UN EQUIPO DE TRABAJO',
@@ -355,7 +378,7 @@ export const data = {
   teachingButton: 'ENTRENEMOS',
   aboutTitle: 'TODO COMENZÓ ALGÚN TIEMPO ATRÁS…',
   about: 'Desde chiquito un “no sé qué”, que me hacia cantar, bailar, hacer personajes, jugar con la voz y más, se apoderó de mi y ya no me soltó. Mientras crecía me daba cuenta que el juego, lo natural, la expresividad, la armonía, la comunicación, eran herramientas que me nutrían a mi y que terminaban por nutrir todo lo que hacia. Hoy por hoy transito mi camino profesional y personal apostando a esas herramientas y a muchas otras más que fui descubriendo con el paso del tiempo. Eso es lo que me hace ser quien soy. Eso es lo que me hace hacer lo que amo. Eso es lo que me hace  único.',
-  aboutImage: 'about.png',
+  aboutImage: 'about.webp',
   contactTitle: 'ESTEMOS EN <b>CONTACTO</b>',
   contactObjective: '<span>Mi objetivo es potenciar tu marca, tu empresa, tu crecimiento profesional o personal.</span>',
   contact: 'TRABAJEMOS EN <b>CONJUNTO</b>',

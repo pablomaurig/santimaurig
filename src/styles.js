@@ -83,11 +83,6 @@ export const useStyles = makeStyles(() => ({
         fontSize: '1.1em',
       }
     },
-    ['@media screen and (min-width: 768px)']: {
-      '& .box-programa': {
-        paddingTop: '1.5em!important',
-      }
-    },
     ['@media screen and (min-width: 980px)']: {
       '& .workTitle': {
         fontSize: '2.9rem',

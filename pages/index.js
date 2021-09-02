@@ -123,37 +123,49 @@ export default function Home({ data }) {
           </Container>
         </Box>
         <BackgroundBox className={classes.boxProgramas} image="programas.webp" component="section" pt={15} pb={10}>
-          <Container>
-            {data.featuredWork.map((work, key) =>
-              <Grid key={key} container spacing={3} justifyContent="center" style={{ marginBottom: '1em', maxWidth: '1000px' }}>
-                <Grid item xs={12} sm={4}>
-                  <div className='link' onClick={() => {
-                    setVideoId(work.id)
-                    handleOpen()
-                  }} onKeyPress={() => {
-                    setVideoId(work.id)
-                    handleOpen()
-                  }} role="button" tabIndex="0" style={{ cursor: 'pointer' }}>
-                    <Image
-                      src={`/images/locucion/${work.image}`}
-                      width={500}
-                      height={300}
-                      alt={work.title}
-                    />
-                  </div>
+          <Container style={{ display: 'flex', alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
+            <Typography align="center" className='workTitle' gutterBottom component="h2" variant="h4" style={{ marginBottom: '2rem' }}>{data.featuredWorkTitle}</Typography>
+            <Grid
+              className="programas"
+              container
+              direction="row" sm={10} lg={10}
+              justifyContent="space-around"
+              alignItems="flex-start" spacing={3}>
+                {data.featuredWork.map((work, key) =>
+                <Grid key={key} item xs={12} sm={5}>
+                  <Grid container spacing={3}
+                    justifyContent="center" style={{ marginBottom: '1em', maxWidth: '1000px' }}>
+                    <Grid item xs={12} lg={10}>
+                      <div className='link' onClick={() => {
+                        setVideoId(work.id)
+                        handleOpen()
+                      }} onKeyPress={() => {
+                        setVideoId(work.id)
+                        handleOpen()
+                      }} role="button" tabIndex="0" style={{ cursor: 'pointer' }}>
+                        <Image
+                          src={`/images/locucion/${work.image}`}
+                          width={500}
+                          height={300}
+                          alt={work.title}
+                          className='img-responsive'
+                        />
+                      </div>
+                    </Grid>
+                    <Grid item xs={12} lg={10} className='box-programa' style={{ paddingTio: 0 }}>
+                      <Typography align="left" style={{ fontWeight: 'bold' }} gutterBottom variant="h5" component="h2">
+                        {work.title}
+                      </Typography>
+                      {work.small && (
+                      <Typography align="left" gutterBottom component="p">
+                        {work.small}
+                      </Typography>
+                      )}
+                    </Grid>
+                  </Grid>
                 </Grid>
-                <Grid item xs={12} sm={8} className='box-programa'>
-                  <Typography align="left" style={{ fontWeight: 'bold' }} gutterBottom variant="h5" component="h3">
-                    {work.title}
-                  </Typography>
-                  <Typography align="left" gutterBottom component="p">
-                    {work.rol}
-                  </Typography>
-                  <Typography align="left" gutterBottom component="p"
-                    dangerouslySetInnerHTML={{ __html: work.staff }}></Typography>
-                </Grid>
-              </Grid>
-            )}
+              )}
+            </Grid>
             <Grid container spacing={0} style={{ marginTop: '2rem' }} justifyContent="center">
               <Grid item>
                 <SquareButton label={data.teamWork} to="contacto" />
@@ -283,11 +295,11 @@ export default function Home({ data }) {
           <Container>
             <Grid container spacing={3} justifyContent="flex-start">
               <Grid item xs={12} className="object">
-                <Typography align="left" gutterBottom variant="h5" component="h4" style={{ marginBottom: "2rem" }}
+                <Typography align="left" gutterBottom variant="h4" component="h4" style={{ marginBottom: "2rem" }}
                   dangerouslySetInnerHTML={{ __html: data.contactTitle }}></Typography>
                 <Typography className="span" align="left" gutterBottom component="p" style={{ marginBottom: "2rem" }}
                   dangerouslySetInnerHTML={{ __html: data.contactObjective }}></Typography>
-                <Typography align="right" gutterBottom variant="h5" component="h4"
+                <Typography align="right" gutterBottom variant="h4" component="h4"
                   dangerouslySetInnerHTML={{ __html: data.contact }}></Typography>
               </Grid>
             </Grid>
