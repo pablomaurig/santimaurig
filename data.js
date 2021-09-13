@@ -254,7 +254,7 @@ export const data = {
       id: 'dZ12XtTmB2s',
       title: 'LOVE NATURE',
       small: 'TV Prepaga, Latam',
-      image: 'combate.png',
+      image: 'locuciones_artisticas_lovenature.png',
       rol: '“El Jefe” (9ª Generación)',
       staff: 'Conductores: Laura Fernández, “El Pollo” Álvarez y Tito Esperanza. <br>Productor Ejecutivo: Daniel Borro.',
     },

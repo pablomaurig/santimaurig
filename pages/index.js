@@ -336,7 +336,7 @@ export default function Home({ data }) {
         disableScrollLock={true}
       >
         <DialogContent className={classes.dialog} id="alert-dialog-description">
-          <iframe title="modal" width="560" height="315" src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe title="modal" width="560" height="315" src={`https://www.youtube.com/embed/${videoId}?rel=0&showinfo=0&autohide=1&autoplay=1`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </DialogContent>
       </Dialog>
     </Layout>
