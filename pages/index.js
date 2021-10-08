@@ -33,7 +33,7 @@ export default function Home({ data }) {
   return (
     <Layout title={data.siteTitle} description={data.siteDescription} favicon="/images/favicon.png">
       <div className={classes.container}>
-        <Hero background="back-hero.webp" data={data} />
+        <Hero background="back-hero.png" data={data} />
         <Box component="section" pt={2} pb={10}>
           <Container style={{ maxWidth: '930px' }}>
             <Grid container spacing={3} justifyContent="center">
