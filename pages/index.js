@@ -153,11 +153,11 @@ export default function Home({ data }) {
                       </div>
                     </Grid>
                     <Grid item xs={12} lg={10} className='box-programa'>
-                      <Typography align="left" style={{ fontWeight: 'bold' }} gutterBottom variant="h5" component="h2">
+                      <Typography align="center" style={{ fontWeight: 'bold' }} gutterBottom variant="h5" component="h2">
                         {work.title}
                       </Typography>
                       {work.small && (
-                      <Typography align="left" gutterBottom variant="h6" component="p">
+                      <Typography align="center" gutterBottom variant="h6" component="p">
                         {work.small}
                       </Typography>
                       )}
