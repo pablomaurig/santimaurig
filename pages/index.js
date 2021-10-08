@@ -55,7 +55,7 @@ export default function Home({ data }) {
             </Grid>
           </Container>
         </Box>
-        <BackgroundBox className={classes.boxLocucion} image="locucion.webp" id='locucion' component="section" py={10}>
+        <BackgroundBox className={classes.boxLocucion} image="locucion.png" id='locucion' component="section" py={10}>
           <Container>
             <Grid container spacing={3} justifyContent="center">
               <Grid item xs={12} sm={4} lg={3}>
@@ -122,7 +122,7 @@ export default function Home({ data }) {
             </Grid>
           </Container>
         </Box>
-        <BackgroundBox className={classes.boxProgramas} image="programas.webp" component="section" pt={15} pb={10}>
+        <BackgroundBox className={classes.boxProgramas} image="programas.png" component="section" pt={15} pb={10}>
           <Container style={{ display: 'flex', alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
             <Typography align="center" className='workTitle' gutterBottom component="h2" variant="h4" style={{ marginBottom: '2rem' }}>{data.featuredWorkTitle}</Typography>
             <Grid
@@ -193,7 +193,7 @@ export default function Home({ data }) {
             </Grid>
           </Container>
         </Box>
-        <BackgroundBox className={classes.boxDoblaje} image="doblaje.webp" id="doblaje" component="section" py={10}>
+        <BackgroundBox className={classes.boxDoblaje} image="doblaje.png" id="doblaje" component="section" py={10}>
           <Container>
             <Grid container spacing={3} justifyContent="center">
               <Grid item xs={12} sm={4} lg={3} className='doblaje-item'>
@@ -259,7 +259,7 @@ export default function Home({ data }) {
             </Grid>
           </Container>
         </Box>
-        <BackgroundBox className={classes.boxDocencia} image="docencia.webp" id='docencia' component="section" py={12}>
+        <BackgroundBox className={classes.boxDocencia} image="docencia.png" id='docencia' component="section" py={12}>
           <Container style={{ maxWidth: '800px' }}>
             <Grid container spacing={3} justifyContent="center">
               <Grid item xs={12} sm={8}>
@@ -291,7 +291,7 @@ export default function Home({ data }) {
           </Container>
         </BackgroundBox>
         <SectionAbout className={classes.box1985} titulo={data.aboutTitle} texto={data.about} imagen={`/images/${data.aboutImage}`} />
-        <BackgroundBox className={classes.boxContacto} image="contacto.webp" id="contacto" component="section" py={10}>
+        <BackgroundBox className={classes.boxContacto} image="contacto.png" id="contacto" component="section" py={10}>
           <Container>
             <Grid container spacing={3} justifyContent="flex-start">
               <Grid item xs={12} className="object">

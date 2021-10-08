@@ -378,7 +378,7 @@ export const data = {
   teachingButton: 'ENTRENEMOS',
   aboutTitle: 'TODO COMENZÓ ALGÚN TIEMPO ATRÁS…',
   about: 'Desde chiquito un “no sé qué”, que me hacia cantar, bailar, hacer personajes, jugar con la voz y más, se apoderó de mi y ya no me soltó. Mientras crecía me daba cuenta que el juego, lo natural, la expresividad, la armonía, la comunicación, eran herramientas que me nutrían a mi y que terminaban por nutrir todo lo que hacia. Hoy por hoy transito mi camino profesional y personal apostando a esas herramientas y a muchas otras más que fui descubriendo con el paso del tiempo. Eso es lo que me hace ser quien soy. Eso es lo que me hace hacer lo que amo. Eso es lo que me hace  único.',
-  aboutImage: 'about.webp',
+  aboutImage: 'about.png',
   contactTitle: 'ESTEMOS EN <b>CONTACTO</b>',
   contactObjective: '<span>Mi objetivo es potenciar tu marca, tu empresa, tu crecimiento profesional o personal.</span>',
   contact: 'TRABAJEMOS EN <b>CONJUNTO</b>',
